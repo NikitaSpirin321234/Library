@@ -1,0 +1,8 @@
+{
+    "books": [
+	{"id": "1", "name": "Война и мир", "author": "Лев Толстой", "releaseYear": "1996",
+	"whoGot": "Александр Смирнов", "dateGot": "24.07.2022", "dateReturn": "24.08.2022"},
+	{"id": "2", "name": "1984", "author": "Джордж Оруэлл", "releaseYear": "null",
+	"whoGot": "null", "dateGot": "null", "dateReturn": "null"}
+    ]
+}

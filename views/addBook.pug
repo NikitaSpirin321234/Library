@@ -1,0 +1,21 @@
+extends addBookLayout
+//extends index
+
+block addBook
+  div(class="wrapper")
+    header(class="wrapper-title")
+      h1= "Добавление книги"
+    div(class="wrapper-input")
+      div(class="wrapper__input__field")
+        label(class="input__label", for="title") Название
+        input(class="input__text", id="title", type="text" required)
+      div(class="wrapper__input__field")
+        label(class="input__label", for="author") Автор
+        input(class="input__text", id="author", type="text" required)
+      div(class="wrapper__input__field")
+        label(class="input__label", for="year") Год выпуска
+        input(class="input__text", id="year", type="text" required)
+    div(class="wrapper__add__book")
+      button(type="button") Добавить книгу
+
+

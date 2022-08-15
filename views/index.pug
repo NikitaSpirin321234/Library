@@ -1,0 +1,64 @@
+extends indexLayout
+
+block content
+  div(class="wrapper")
+    header(class="wrapper-title")
+      h3= "Домашняя библиотека"
+      input(class="search-input", type="text", placeholder="поиск...")
+    div(class="wrapper-panel")
+      div(class="wrapper__filter")
+        select(id="select", name="select")
+          option Все
+          option В наличии
+          option Возврат просрочен
+      div(class="wrapper__add__book")
+        button(type="button") Добавить книгу
+    div(class="wrapper-table")
+      div(class="wrapper__table__title")
+        h4= "Список книг"
+      div(class="table")
+        table(width="100%", border="2")
+          tr(class="column-title")
+            th
+            th(class="title-book") Название книги
+            th(class="author") Автор
+            th(class="available") В наличии
+            th(class="edit")
+            th(class="available")
+          tr
+            td
+              div(class="row-number") 01
+            td(class="title-book") Война и мир
+            td(class="author") Лев Толстой
+            td(class="available")
+              img(src="../images/yes.svg")
+            td(class="edit")
+              button(class="edit-button") Редактировать
+            td(class="available")
+              button(class="delete-button") Удалить
+          tr
+            td
+              div(class="row-number") 02
+            td(class="title-book") 1984
+            td(class="author") Джордж Оруэлл
+            td(class="available")
+              img(src="../images/no.svg")
+            td(class="edit")
+              button(class="edit-button") Редактировать
+            td(class="available")
+              button(class="delete-button") Удалить
+    div(class="modal-add-book")
+      div(class="wrapper-title")
+        h1= "Добавление книги"
+      div(class="wrapper-input")
+        div(class="wrapper__input__field")
+          label(class="input__label", for="title") Название
+          input(class="input__text", id="title", type="text" required)
+        div(class="wrapper__input__field")
+          label(class="input__label", for="author") Автор
+          input(class="input__text", id="author", type="text" required)
+        div(class="wrapper__input__field")
+          label(class="input__label", for="year") Год выпуска
+          input(class="input__text", id="year", type="text" required)
+      div(class="wrapper__add__book")
+        button(type="button") Добавить книгу
